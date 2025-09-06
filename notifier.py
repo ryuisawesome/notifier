@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 DISCORD_WEBHOOK_URL = input("Enter your Discord Webhook URL: ")
-DISCORD_USER_IDS = [1413290947336212665] replace with ur discord id
+DISCORD_USER_IDS = [] replace with ur discord id
 
 def load_usernames_from_file(filename="usernames.txt"):
     try:
@@ -25,7 +25,6 @@ username_status = {username: "unknown" for username in usernames_to_check}
 username_available_time = {}
 
 def send_discord_ping(username, message_type, duration=None):
-    # Create mention string for all user IDs
     user_mentions = " ".join([f"<@{user_id}>" for user_id in DISCORD_USER_IDS])
     
     if message_type == "available":
@@ -79,4 +78,4 @@ if __name__ == "__main__":
             
             print(f"Checking {name}: {msg}")
             
-            time.sleep(1)  # Adjust the delay as needed
+            time.sleep(1)
