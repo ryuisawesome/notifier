@@ -1,0 +1,9 @@
+Create a folder.
+
+inside the folder either create a notifier.py file and a username.txt file or let the script generate them automatically for you.
+
+add the usernames you want into username.txt.
+
+Run notifier.py and enter your webhook url
+
+the python script will notify you as soon as any of your usernames become available
